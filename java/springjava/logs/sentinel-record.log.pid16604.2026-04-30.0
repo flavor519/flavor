@@ -1,0 +1,5 @@
+2026-04-30 11:15:28.812 INFO [GatewayRuleManager] No gateway rules, clearing parameter metrics of previous rules
+2026-04-30 11:15:28.813 INFO [GatewayRuleManager] Gateway flow rules loaded: {}
+2026-04-30 11:15:28.813 INFO [DynamicSentinelProperty] Config will be updated to: [GatewayFlowRule{resource='user-service-route', resourceMode=0, grade=1, count=1.0, intervalSec=1, controlBehavior=0, burst=0, maxQueueingTimeoutMs=500, paramItem=null}]
+2026-04-30 11:15:28.815 INFO [GatewayRuleManager] Converted internal param rules: {user-service-route=[ParamFlowRule{grade=1, paramIdx=0, count=1.0, controlBehavior=0, maxQueueingTimeMs=500, burstCount=0, durationInSec=1, paramFlowItemList=[], clusterMode=false, clusterConfig=null}]}
+2026-04-30 11:15:28.816 INFO [GatewayRuleManager] Gateway flow rules received: {user-service-route=[GatewayFlowRule{resource='user-service-route', resourceMode=0, grade=1, count=1.0, intervalSec=1, controlBehavior=0, burst=0, maxQueueingTimeoutMs=500, paramItem=null}]}

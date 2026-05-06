@@ -1,0 +1,3 @@
+2026-04-30 11:38:46.192 INFO [GatewayRuleManager] No gateway rules, clearing parameter metrics of previous rules
+2026-04-30 11:38:46.193 INFO [GatewayRuleManager] Gateway flow rules loaded: {}
+2026-04-30 11:38:46.193 INFO [DynamicSentinelProperty] Config will be updated to: [GatewayFlowRule{resource='user-service-route', resourceMode=0, grade=1, count=1.0, intervalSec=1, controlBehavior=0, burst=0, maxQueueingTimeoutMs=500, paramItem=null}]

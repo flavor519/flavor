@@ -1,0 +1,5 @@
+2026-04-30 11:01:15.640 INFO [CommandCenter] Begin listening at port 8720
+2026-04-30 11:01:21.768 INFO [SimpleHttpCommandCenter] Socket income: GET /metric?startTime=1777518073000&endTime=1777518079000&refetch=false HTTP/1.1, addr: /192.168.1.134
+2026-04-30 11:01:21.773 INFO [SimpleHttpCommandCenter] Deal a socket task: GET /metric?startTime=1777518073000&endTime=1777518079000&refetch=false HTTP/1.1, address: /192.168.1.134, time cost: 5 ms
+2026-04-30 11:01:28.767 INFO [SimpleHttpCommandCenter] Socket income: GET /metric?startTime=1777518080000&endTime=1777518086000&refetch=false HTTP/1.1, addr: /192.168.1.134
+2026-04-30 11:01:28.769 INFO [SimpleHttpCommandCenter] Deal a socket task: GET /metric?startTime=1777518080000&endTime=1777518086000&refetch=false HTTP/1.1, address: /192.168.1.134, time cost: 2 ms

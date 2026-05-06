@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 必须对应你的 Mapper 接口全类名 -->
+<mapper namespace="com.example.mapper.UserMapper">
+
+    <!-- 查询所有 -->
+    <select id="selectAll" resultType="com.example.entity.User">
+        SELECT id, username, password, age, gender, phone
+        FROM user
+    </select>
+
+    <!-- 根据ID查询 -->
+    <select id="selectById" parameterType="int" resultType="com.example.entity.User">
+        SELECT id, username, password, age, gender, phone
+        FROM user
+        WHERE id = #{id}
+    </select>
+
+    <!-- 新增 -->
+    <insert id="insert" parameterType="com.example.entity.User">
+        INSERT INTO user (username, password, age, gender, phone)
+        VALUES (#{username}, #{password}, #{age}, #{gender}, #{phone})
+    </insert>
+
+    <!-- 修改 -->
+    <update id="update" parameterType="com.example.entity.User">
+        UPDATE user
+        SET username = #{username},
+        password = #{password},
+        age = #{age},
+        gender = #{gender},
+        phone = #{phone}
+        WHERE id = #{id}
+    </update>
+
+    <!-- 删除 -->
+    <delete id="deleteById" parameterType="int">
+        DELETE FROM user WHERE id = #{id}
+    </delete>
+
+</mapper>
